@@ -4,6 +4,14 @@
   .arrows{
     padding-right: 20px ;
     margin-top: -80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5%;
+
+    img:hover{
+      transform: scale(1.1);
+    }
   }
 
   .title {
@@ -11,7 +19,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 40px 0;
+    text-align: center;
+    padding: 30px 0;
   }
 
 
@@ -58,12 +67,8 @@
 
 @media screen and (min-width: 1000px) {
 
-  .arrows{
-    background-size: cover;
-  }
-
-  .circle{
-    height: 1100px;
+  .arrows-img{
+    width: 60%;
   }
 
   .exp{
@@ -73,8 +78,9 @@
 
 @media screen and (min-width: 1920px) {
 
+
   .arrows-img{
-    height: 1080px;
+    width: 40%;
   }
 
   .exp {

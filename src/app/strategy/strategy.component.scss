@@ -8,16 +8,16 @@
 
 .text {
   position: absolute;
-  top: 40%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: nullpx;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 40px;
+  font-size: 25px;
   font-style: normal;
   font-weight: 500;
-  line-height: 113px;
+  line-height: 25px;
   letter-spacing: 0em;
   text-align: left;
   color: #ffffff;
@@ -25,35 +25,36 @@
 
 .text1 {
   position: absolute;
-  top: 65%;
+  top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 18px;
-  line-height: 28px;
+  font-size: 12px;
+  line-height: 20px;
   color: #ffffff;
 }
 
 .elipse {
   position: relative;
-  width: 80%;
-  left: 30%;
+  width: 30%;
+  top: 20%;
+  left: 20%;
 }
 .elipse1 {
   position: relative;
-  width: 80%;
-  left: -200px;
-  top: 70px;
+  width: 30%;
+  left: -30%;
+  top: 50px;
 }
 .elipse2 {
-  position: relative;
-  top: 150px;
-  left: 60px;
+  position: absolute;
+  width: 30%;
+  left: 60%;
+  top: 70%;
 }
-
 .spacer {
   padding: 50px 50px;
 
@@ -114,6 +115,7 @@
 .asd {
   position: relative;
   margin-top: 30px;
+
 }
 
 .simply {
@@ -125,6 +127,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 
   h1 {
     font-style: normal;
@@ -135,30 +138,41 @@
   }
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 768px) {
+
   .text {
-    font-size: 60px;
+    font-size: 50px;
+    top: 50%;
   }
 
   .text1 {
     font-size: 20px;
   }
+}
+@media screen and (min-width: 1000px) {
+  .text {
+    font-size: 60px;
+    top: 50%;
+  }
+
+  .text1 {
+    font-size: 22px;
+    margin-top: -25px;
+  }
+
 
   .elipse {
-    position: relative;
-    width: 70%;
-    left: 25%;
+    width: 40%;
   }
+
   .elipse1 {
-    position: relative;
-    width: 80%;
-    left: -360px;
-    top: 70px;
+    top: 90px;
+    width: 30%;
+    left: -40%;
   }
+
   .elipse2 {
-    position: relative;
-    top: 350px;
-    left: 60px;
+    width: 30%;
   }
 
   .spacer {
@@ -231,21 +245,19 @@
   }
 
   .elipse {
-    width: 60%;
-    position: absolute;
-    left: 330px;
-    top: -200px;
-  }
-  .elipse1 {
+    top: 0;
     width: 40%;
     position: absolute;
-    top: 350px;
-    left: -130px;
+  }
+  .elipse1 {
+    width: 30%;
+    left: 0%;
+    top: 30%;
+    position: absolute;
   }
   .elipse2 {
     position: absolute;
-    top: 850px;
-    left: 1300px;
+    width: 40%;
   }
 
   .spacer {

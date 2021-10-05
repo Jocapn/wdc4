@@ -1,4 +1,3 @@
-
 .hero {
   width: 100%;
   background-color: #48337b;
@@ -9,16 +8,16 @@
 
 .text {
   position: absolute;
-  top: 40%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: nullpx;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 40px;
+  font-size: 25px;
   font-style: normal;
   font-weight: 500;
-  line-height: 113px;
+  line-height: 25px;
   letter-spacing: 0em;
   text-align: left;
   color: #ffffff;
@@ -26,33 +25,35 @@
 
 .text1 {
   position: absolute;
-  top: 65%;
+  top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 18px;
-  line-height: 28px;
+  font-size: 12px;
+  line-height: 20px;
   color: #ffffff;
 }
 
 .elipse {
   position: relative;
-  width: 80%;
-  left: 30%;
+  width: 30%;
+  top: 20%;
+  left: 20%;
 }
 .elipse1 {
   position: relative;
-  width: 80%;
-  left: -200px;
-  top: 70px;
+  width: 30%;
+  left: -30%;
+  top: 50px;
 }
 .elipse2 {
-  position: relative;
-  top: 150px;
-  left: 60px;
+  position: absolute;
+  width: 30%;
+  left: 60%;
+  top: 70%;
 }
 
 .ux {
@@ -79,9 +80,6 @@
     line-height: 56px;
     margin-top: 20px;
     margin-bottom: 20px;
-
-    /* Gray 1 */
-
     color: #333333;
   }
 }
@@ -89,12 +87,11 @@
 .right {
   position: relative;
   margin-top: 50px;
-  padding: 0 150px;
 }
 
 .circle1 {
-  width: 250px;
-  height: 250px;
+  width: 150px;
+  height: 150px;
   background-color: #48337b;
   border-radius: 50%;
   position: relative;
@@ -110,8 +107,8 @@
 
 .circle2 {
   position: absolute;
-  height: 100px;
-  width: 100px;
+  height: 65px;
+  width: 65px;
   background-color: #ff9800;
   border-radius: 50%;
   display: inline-block;
@@ -124,6 +121,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color: #ffffff;
+    font-size: 12px;
   }
 }
 
@@ -148,8 +146,10 @@
 .brain {
   background-color: #48337b;
   display: flex;
-  justify-content: space-around;
-  flex-direction: row;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 
   h1 {
     margin-bottom: -20px;
@@ -174,7 +174,7 @@
 }
 
 .brain-img {
-  width: 30%;
+  width: 70%;
   height: 30%;
   padding: 20px 20px;
 }
@@ -189,6 +189,8 @@
 .principles {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .headline {
@@ -196,28 +198,26 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   margin: 50px 0;
 }
 
 h1 {
   font-style: normal;
   font-weight: 500;
-  font-size: 48px;
+  font-size: 35px;
   line-height: 56px;
   color: #000000;
   margin-bottom: -5px;
 }
 
 .square {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-gap: 20px;
 }
 
 .s {
   position: relative;
-  margin: 0 20px;
   width: 220px;
   height: 160px;
   background: #48337b;
@@ -234,7 +234,7 @@ h1 {
 
   .tag {
     position: absolute;
-    top: 65%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
 
@@ -249,7 +249,8 @@ h1 {
 
 .s:hover {
   background: #ff9800;
-  transition: 1s;
+  transition: 0.5s;
+  transform: scale(1.1);
 }
 
 .stages {
@@ -260,6 +261,7 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 
   .naslov {
     position: relative;
@@ -267,6 +269,10 @@ h1 {
     justify-content: center;
     align-items: center;
     margin: 20px 0;
+    
+      h1{font-size: 30px;
+      }
+      
   }
 
   h1 {
@@ -288,8 +294,8 @@ h1 {
 .elipse4 {
   position: absolute;
   width: 25%;
-  top: 200px;
-  left: 440px;
+  top: 70%;
+  left: 75%;
 }
 
 .start {
@@ -302,31 +308,72 @@ h1 {
   width: 55%;
 }
 
+@media screen and (min-width: 768px) {
+
+  .text {
+    font-size: 50px;
+    top: 50%;
+  }
+
+  .text1 {
+    font-size: 20px;
+  }
+
+  .circle1 {
+    width: 300px;
+    height: 300px;
+  }
+  .circle2 {
+    width: 120px;
+    height: 120px;
+  }
+
+  .brain {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 40px 40px;
+  }
+
+  .brain-img {
+    width: 40%;
+    margin: 0 -90px;
+  }
+
+  .elipse4 {
+    top: 50%;
+  }
+
+  .naslov{
+    h1{
+      font-size: 50px;
+    }
+  }
+}
+
 @media screen and (min-width: 1000px) {
   .text {
     font-size: 60px;
+    top: 50%;
   }
 
   .text1 {
     font-size: 22px;
-    margin-top: -45px;
+    margin-top: -25px;
   }
 
   .elipse {
-    width: 100%;
-    left: 290px;
-    top: -60px;
+    width: 40%;
   }
 
   .elipse1 {
-    width: 100%;
-    left: -380px;
-    top: 100px;
+    top: 90px;
+    width: 30%;
+    left: -40%;
   }
 
   .elipse2 {
-    top: 370px;
-    left: -50px;
+    width: 30%;
   }
 
   .ux {
@@ -356,7 +403,19 @@ h1 {
   }
 
   .brain {
+    display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
+    padding: 40px 40px;
+  }
+
+  .brain-img {
+    width: 40%;
+    margin: 0 -90px;
+  }
+
+  .square {
+    display: flex;
   }
 
   .s {
@@ -367,10 +426,25 @@ h1 {
   .elipse3 {
     top: -35px;
   }
+}
 
-  .elipse4 {
-    left: 730px;
-    top: 280px;
+@media screen and (min-width: 1440px) {
+
+  .circle1{
+    p{
+      font-size: 25px;
+    }
+  }
+
+  .ls{
+    h1{
+      font-size: 80px;
+      font-weight: 400;
+    }
+  }
+
+  .elipse4{
+    top: 33%;
   }
 }
 
@@ -417,21 +491,19 @@ h1 {
   }
 
   .elipse {
-    width: 60%;
-    position: absolute;
-    left: 330px;
-    top: -200px;
-  }
-  .elipse1 {
+    top: 0;
     width: 40%;
     position: absolute;
-    top: 350px;
-    left: -130px;
+  }
+  .elipse1 {
+    width: 30%;
+    left: 0%;
+    top: 30%;
+    position: absolute;
   }
   .elipse2 {
     position: absolute;
-    top: 850px;
-    left: 1300px;
+    width: 40%;
   }
 
   .ux {
@@ -443,7 +515,6 @@ h1 {
     .left {
       padding-left: 0;
     }
-  
 
     p {
       font-family: Roboto;
@@ -521,7 +592,6 @@ h1 {
   }
 
   .ux {
-
     h2 {
       font-style: normal;
       font-weight: 500;
@@ -676,8 +746,7 @@ h1 {
 
   .elipse4 {
     position: absolute;
-    left: 1440px;
-    top: 490px;
+    top: 50%;
   }
 
   .start {

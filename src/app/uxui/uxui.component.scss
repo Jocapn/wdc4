@@ -3,7 +3,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 100px 0;
+  padding: 50px 0;
+  text-align: center;
 
   h1 {
     font-style: normal;
@@ -16,6 +17,7 @@
 
 .complex {
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
   text-align: center;
@@ -45,40 +47,40 @@
 .user-interface {
   background: #48337b;
   display: flex;
-  justify-content: center;
+  padding: 30px 0;
+  flex-direction: column;
   align-items: center;
-  padding: 70px 0px;
 }
 
 .right {
-  margin-right: 80px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 
   h1 {
-    margin-left: -50px;
     font-style: normal;
     font-weight: normal;
-    font-size: 40px;
-    line-height: 112px;
+    font-size: 45px;
+    line-height: 150px;
     color: #f2f2f2;
   }
 
   h3 {
-    margin-left: -50px;
     margin-top: -50px;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 23px;
-    text-align: center;
+    text-align: left;
     color: #f2f2f2;
   }
 }
 
 .text {
-  padding: 40px 80px;
+  padding: 40px 40px;
 
   p {
     font-style: normal;
@@ -100,36 +102,84 @@
 .user-interface-right {
   background: #ff9800;
   display: flex;
+  padding: 30px 0;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 70px 0px;
 }
 
 .desno {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
-  margin: 0 40px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 
   h1 {
     font-style: normal;
     font-weight: normal;
-    font-size: 40px;
-    font-weight: 400;
-    line-height: 112px;
+    font-size: 45px;
+    line-height: 50px;
     color: #48337b;
   }
 
   h3 {
-    margin-top: -50px;
     font-style: normal;
     font-weight: normal;
-    font-weight: 400;
     font-size: 16px;
     line-height: 23px;
-    text-align: center;
+    text-align: left;
     color: #48337b;
   }
+}
+
+@media screen and (min-width: 768px) {
+
+  .complex{
+    display: flex;
+    flex-direction: row;
+
+    img{
+      margin: 0 0;
+    }
+  }
+
+  .left {
+    img {
+      width: 100%;
+    }
+
+    margin-right: 40px;
+
+    padding-left: -70px;
+  }
+
+  .levo {
+    img {
+      width: 100%;
+    }
+
+    margin-left: 30px;
+
+  }
+
+
+  .user-interface{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 30px 130px;
+  }
+
+  .user-interface-right{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 30px 110px;
+
+  }
+
+
 }
 
 @media screen and (min-width: 1000px) {
@@ -159,23 +209,29 @@
       }
 
     .user-interface {
-    padding-right: 150px;
+      display: flex;
+      justify-content: center;
   }
 
   .right {
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
     h1 {
-      font-size: 50px;
+      font-size: 80px;
+      font-weight: 500;
     }
 
     h3 {
       font-size: 20px;
-      margin-top: -40px;
     }
   }
 
   .left {
     img {
-      width: 70%;
+      width: 100%;
     }
 
     margin-right: 40px;
@@ -183,25 +239,34 @@
     padding-left: -70px;
   }
 
+  .user-interface-right {
+    display: flex;
+    justify-content: center;
+}
+
   .desno {
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
     h1 {
-      font-size: 50px;
+      font-size: 80px;
+      font-weight: 500;
     }
 
     h3 {
       font-size: 20px;
-      margin-top: -40px;
     }
   }
 
   .levo {
     img {
-      width: 70%;
+      width: 100%;
     }
 
-    margin-left: 20px;
+    margin-left: 30px;
 
-    padding-right: 70px;
   }
 
   .text {
@@ -247,7 +312,6 @@
           font-size: 20px;
           line-height: 23px;
           text-align: center;
-          margin-top: -35px;
         }
         
       }
@@ -261,12 +325,11 @@
     }
   }
 
-  .user-interface {
-    padding-right: 250px;
-  }
-
   .right {
-    margin-left: 100px;
+
+    img{
+      width: 100%;
+    }
 
     h1 {
       font-size: 96px;
@@ -274,7 +337,6 @@
 
     h3 {
       font-size: 20px;
-      margin-top: -10px;
     }
   }
 
@@ -284,10 +346,6 @@
     }
   }
 
-  .user-interface-right {
-    padding-left: 250px;
-  }
-
   .desno {
     h1 {
       font-size: 96px;
@@ -295,7 +353,6 @@
 
     h3 {
       font-size: 20px;
-      margin-top: -15px;
     }
   }
 
