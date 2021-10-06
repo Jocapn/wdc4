@@ -1,6 +1,5 @@
 <mat-toolbar class="mat-elevation-z8">
-  
-  <p class="logo">UXTEAM</p>
+  <p class="logo" (click)="hideBar()" routerLink="/">UXTEAM</p>
   <div class="spacer"></div>
 
   <div class="nav">
@@ -10,7 +9,6 @@
     <a (click)="hideBar()" routerLink="uxui" mat-button>UXUI</a>
     <a (click)="hideBar()" routerLink="contact" mat-button>Contact</a>
   </div>
- 
 
   <div (click)="showBar()" id="nav-icon3">
     <span></span>

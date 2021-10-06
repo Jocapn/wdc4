@@ -1,98 +1,104 @@
-.stages {
-  background: #48337b;
-  
-  .arrows{
-    padding-right: 20px ;
-    margin-top: -80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 5%;
+:host {
+  .stages {
+    background: #48337b;
 
-    img:hover{
-      transform: scale(1.1);
+    .title {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 30px 0;
+
+      h1 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 35px;
+        line-height: 56px;
+
+        color: #ffffff;
+      }
     }
-  }
 
-  .title {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 30px 0;
-  }
+    .circle {
+      .arrows {
+        padding-right: 20px;
+        margin-top: -80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 5%;
 
-
-
-  h1 {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 35px;
-    line-height: 56px;
-
-    color: #ffffff;
-  }
-}
-
-.exp {
-  p {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 28px;
-    color: #000000;
-  }
-  padding: 50px 50px;
-}
-
-.research {
-  position: relative;
-}
-
-.text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-style: normal;
-  font-weight: 500;
-  font-size: 70px;
-  line-height: 112px;
-
-  color: #ffffff;
-
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-@media screen and (min-width: 1000px) {
-
-  .arrows-img{
-    width: 60%;
-  }
-
-  .exp{
-    padding: 50px 100px;
-  }
-}
-
-@media screen and (min-width: 1920px) {
-
-
-  .arrows-img{
-    width: 40%;
+        img:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
   }
 
   .exp {
-    padding: 50px 240px;
+    padding: 50px 50px;
+    
+    p {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 28px;
+      color: #000000;
+    }
+    
   }
 
-  .stages {
-    .title{
-    h1 {
-      font-size: 48px;
+  .research {
+    position: relative;
+    .text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-style: normal;
+      font-weight: 500;
+      font-size: 70px;
+      line-height: 112px;
+      color: #ffffff;
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     }
   }
-}
 
+  @media screen and (min-width: 1000px) {
+    .stages {
+      .circle {
+        .arrows {
+          .arrows-img {
+            width: 60%;
+          }
+        }
+      }
+    }
+
+    .exp {
+      padding: 50px 100px;
+    }
+  }
+
+  @media screen and (min-width: 1920px) {
+    .stages {
+      .title {
+        h1 {
+          font-size: 48px;
+        }
+      }
+      .circle {
+        .arrows {
+          .arrows-img {
+            width: 40%;
+          }
+        }
+      }
+    }
+
+    .exp {
+      padding: 50px 240px;
+    }
+  }
 }
